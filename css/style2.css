@@ -8,7 +8,6 @@
 
 body {
     font-family: "Merriweather Light", serif;
-    line-height: 1.5;
     min-height: 100vh;
     font-size: 1.25rem;
 }
@@ -16,6 +15,14 @@ body {
 table *:focus {
     outline: none;
     background-color: #777777;
+}
+
+table {
+    min-width: 90%;
+}
+
+table td, th {
+    padding: 2em;
 }
 
 body > div {
@@ -44,21 +51,22 @@ summary {
 }
 
 summary {
-    border: 1px solid black;
+    border: none;
     border-radius: 0 2.4em;
     padding: .75em 1em;
     cursor: pointer;
     position: relative;
     padding-left: calc(1.75rem + .75rem + .75rem);
     text-align: right;
-    transition: all .5s ease-in-out;
+    background: rgba(229, 174, 74, 0.42)
+    transition: all .5s ease-in;
 }
 
 summary:before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: .75rem;
+    left: 1.75rem;;
     content: "↓";
     width: 1.75rem;
     height: 1.75rem;
@@ -70,8 +78,7 @@ summary:before {
 }
 
 details[open] summary {
-    background-color: #eee;
-    outline: 3px solid black;
+    border: 2px solid var(--c5);
 }
 
 details[open] summary:before {
@@ -79,7 +86,7 @@ details[open] summary:before {
 }
 
 summary:hover {
-    background-color: #eee;
+    background-color: rgba(229, 174, 74, 0.82);
 }
 
 a {
