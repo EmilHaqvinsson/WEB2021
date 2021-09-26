@@ -1,0 +1,134 @@
+.ac-container {
+}
+
+.ac-container label {
+    height: 2em !important;
+    font-size: 1em !important;
+    font-family: 'Open Sans','Arial Narrow',Arial,sans-serif !important;
+    padding: .25em 1em;
+    position: relative;
+    z-index: 20;
+    display: block;
+    cursor: pointer;
+    color: #777;
+    background: #fff;
+    background: -moz-linear-gradient(top,#fff 1%,#eaeaea 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(1%,#fff),color-stop(100%,#eaeaea));
+    background: -webkit-linear-gradient(top,#fff 1%,#eaeaea 100%);
+    background: -o-linear-gradient(top,#fff 1%,#eaeaea 100%);
+    background: -ms-linear-gradient(top,#fff 1%,#eaeaea 100%);
+    background: linear-gradient(top,#fff 1%,#eaeaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff',endColorstr='#eaeaea',GradientType=0 );
+    box-shadow: 0 0 0 1px rgba(155,155,155,0.3),1px 0 0 rgba(255,255,255,0.9) inset,0 2px 2px rgba(0,0,0,0.1);
+    font-size: 12px;
+    height: 30px;
+    line-height: 20px;
+}
+
+.ac-container {
+    width: 100%;
+    margin: 10px auto 30px auto;
+    text-align: left;
+}
+
+.ac-container label:hover {
+    background: #fff;
+}
+
+.ac-container input:checked + label,.ac-container input:checked + label:hover {
+    background: #f1f2f3;
+    color: #666;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+    height: 2em;
+}
+
+.ac-container label:hover:after,.ac-container input:checked + label:hover:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 13px;
+    top: 7px;
+    background: transparent url(../images/arrow_down.png) no-repeat center center;
+}
+
+.ac-container input:checked + label:hover:after {
+    background-image: url(../images/arrow_up.png);
+}
+
+.ac-container input {
+    display: none;
+}
+
+.ac-container article {
+    background: rgba(255,255,255,0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0;
+    position: relative;
+    z-index: 10;
+    transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+}
+
+.ac-container article p {
+    font-style: normal;
+    color: #777;
+    line-height: 23px;
+    font-size: 10px;
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+
+.ac-container input:checked ~ article {
+    transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+    box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
+}
+
+.ac-container input:checked ~ article.ac-small {
+    height: 140px;
+}
+
+.ac-container input:checked ~ article.ac-medium {
+    height: 180px;
+}
+
+.ac-container input:checked ~ article.ac-large {
+    height: 230px;
+}
+
+table.greyGridTable {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    border: 0px solid #FFFFFF;
+    background-color: #878787;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.greyGridTable td, table.greyGridTable th {
+    border: 2px solid #FFFFFF;
+}
+table.greyGridTable td:nth-child(even) {
+    background: #EBEBEB;
+}
+table.greyGridTable thead {
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #000000 0%, rgba(255, 255, 255, .5) 66%, transparent 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    border-bottom: 0px solid #333333;
+}
+table.greyGridTable thead th {
+    font-weight: bold;
+    color: #333333;
+    text-align: left;
+    border-left: 2px solid #333333;
+}
+table.greyGridTable thead th:first-child {
+    border-left: none;
+}
+
+table.greyGridTable tfoot {
+    font-weight: bold;
+    color: #333333;
+    background: #FFFFFF;}
+

@@ -1,0 +1,96 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 1em;
+}
+
+body {
+    font-family: "Merriweather Light", serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    font-size: 1.25rem;
+}
+
+table *:focus {
+    outline: none;
+    background-color: #777777;
+}
+
+body > div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+details div {
+    border: none;
+    padding: 1.5em;
+}
+
+details div > * + * {
+    margin-top: 1.5em;
+}
+
+details + details {
+    margin-top: .5rem;
+}
+
+summary {
+    list-style: none;
+}
+
+summary {
+    border: 1px solid black;
+    border-radius: 0 2.4em;
+    padding: .75em 1em;
+    cursor: pointer;
+    position: relative;
+    padding-left: calc(1.75rem + .75rem + .75rem);
+    text-align: right;
+    transition: all .5s ease-in-out;
+}
+
+summary:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: .75rem;
+    content: "↓";
+    width: 1.75rem;
+    height: 1.75rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition: all 1s;
+}
+
+details[open] summary {
+    background-color: #eee;
+    outline: 3px solid black;
+}
+
+details[open] summary:before {
+    content: "↑";
+}
+
+summary:hover {
+    background-color: #eee;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: #333333 2px solid;
+}
+
+code {
+    font-family: "InputMono", monospace;
+    font-weight: 600;
+}
