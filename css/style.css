@@ -32,7 +32,7 @@ body {
     margin: 0;
     font-family: 'Merriweather Light', serif;
     color: var(--c1);
-    background-image: url("/img/forest_pattern_hq.png");
+    background-image: url("./img/forest_pattern_hq.png");
     background-size: contain;
     background-position: center;
 }
@@ -100,6 +100,7 @@ body {
     padding: 1em;
     place-items: center;
     flex: 2 3;
+    border-radius: 3em 3em 0 0;
     transition: all 1s ease-in-out;
 }
 .navbar_L {
@@ -108,7 +109,7 @@ body {
 .navbar a:hover {
     color: var(--c3);
     flex: 3 0;
-    font-style: oblique;
+    border-radius: 0 0 2.5em 2.5em ;
     background-color: rgba(255, 255, 255, .05);
 }
 .navbar a:active {
